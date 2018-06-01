@@ -7,5 +7,8 @@ app.set("views", "./views");
 app.get("/", function(req, res) {
   res.render("home");
 });
+app.get("/index.html", function(req, res) {
+  res.render("home");
+});
 
 app.listen(process.env.PORT || 3000, () => console.log("Server started."));
